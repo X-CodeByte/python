@@ -9,7 +9,7 @@ dscount=10;
 def discountedprice(product_prices, discount):
     d=np.array(discount/100)
     product_discount = product_prices*d
-    print(f"Discount values on respective products are{product_discount}")
+    print(f"Discount amount on respective products are{product_discount}")
     return product_prices-product_discount
     
 print(f" Original product prices are {product_prices} , \n respective prices after {dscount}% discount are => ",discountedprice(product_prices,dscount) )
